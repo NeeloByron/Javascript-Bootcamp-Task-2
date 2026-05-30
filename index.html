@@ -10,21 +10,30 @@
 <main>
    <div class="Mark-Scale">
       <h2>Enter Student Name & Marks</h2>
-         <form class="Student-Form" action="#" method="POST">
 
              <!-----------Student Name Input-------------->
-                <label for="name">Enter Student Name:</label>
+                <label for="name">Enter Student-Name:</label>
                 <input type="text" id="name" placeholder="Enter student name here.." required>
 
             <!--------------Student Mark Input------------->
-                <label for="marks">Enter Student Marks:</label>
-                <input type="number" id="Student-mark" placeholder="Enter student mark here.." min="0" max="100" required>
+                <label for="mark">Enter Student Marks:</label>
+                <input type="number" id="mark" placeholder="Enter student mark here.." min="0" max="100" required>
 
             <!-----------Submit Button--------------------->
-               <button type="Submit">Submit.</button>
+               <button type="Submit" onclick="submitStudent()">Submit.</button>
 
-        </form>
+            <!------------Results Found--------------------> 
+        <div id="results"></div>
    </div>
-</main>
 
+   <!--------------Results Output----------------->
+    <div class="resultsList">
+       <h3>Students Results</h3>
+           <ul id="list">
+               <li id="message">
+                  No Students yet
+            </li>
+        </ul>
+    </div>
+</main>
 </html>
