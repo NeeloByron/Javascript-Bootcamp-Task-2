@@ -59,3 +59,18 @@ input[type="number"]:focus {
     border-color: #6c63ff;
     background-color: #ffffff;
 }
+
+/*----------Submit Button-------*/
+button[type="Submit"] {
+   width: 100%;
+   padding: 11px;
+   font-size: 15px;
+   font-weight: 600;
+   background-color: #6c63ff;
+   color: #ffffff;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background-color 0.2s, transform 0.1s;
+   margin-top: 0.25rem;
+}
