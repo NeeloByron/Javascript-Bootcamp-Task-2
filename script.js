@@ -3,12 +3,12 @@
 const nameInput = document.getElementById("name"); 
 const markInput = document.getElementById("mark");
 const ResultList = document.getElementById("results");
-const studentList = document.getElementById ("list");
+const studentList = document.getElementById("list");
 const emptyMessage = document.getElementById("message");
 
 //2. Read form values using .value and parse numbers with parselnt
 function submitStudent() {
-    const studentName = nameInput.trim();
+    const studentName = nameInput.value.trim();
     const studentMark = parseInt(markInput.value);
 
 
@@ -45,7 +45,7 @@ else {
 }
 
 //5. Update the DOM result area using textContent or innerHTML
-const message = `${studentName} got ${studentMark}/100 - ${grade} (${grade})`;
+const message = `${studentName} got ${studentMark}/100 - ${grade} (${result})`;
   showResult(message, result === "PASS" ? "pass" : "fail");
 
 //.6 Append to the list using createElement() and appendChild()//
@@ -59,7 +59,7 @@ const li = document.createElement("li");
 
 //fill it with the student's info
 li.innerHTML = `<span>${studentName} - <strong>${studentMark}/100</strong></span>
-                <span> class="${result === 'PASS' ? 'badge-pass' : 'badge-fail'}">${grade}  ${result}</span>`;
+                <span class="${result === 'PASS' ? 'badge-pass' : 'badge-fail'}">${grade}  ${result}</span>`;
 
 //Add the new <li> to the <ul>
 studentList.appendChild(li);
