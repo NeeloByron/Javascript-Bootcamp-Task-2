@@ -59,7 +59,7 @@ const li = document.createElement("li");
 
 //fill it with the student's info
 li.innerHTML = `<span>${studentName} - <strong>${studentMark}/100</strong></span>
-                <span class="${result === 'PASS' ? 'badge-pass' : 'badge-fail'}">${grade}  ${result}</span>`;
+                <span class="${result === 'PASS' ? 'badge-pass' : 'badge-fail'}">${result}  ${grade}</span>`;
 
 //Add the new <li> to the <ul>
 studentList.appendChild(li);
