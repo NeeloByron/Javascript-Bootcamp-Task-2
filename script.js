@@ -45,7 +45,7 @@ else {
 }
 
 //5. Update the DOM result area using textContent or innerHTML
-const message = `${studentName} got ${studentMark}/100 - ${grade} (${result})`;
+const message = `${studentName} got ${studentMark}/100 - ${result} (${grade})`;
   showResult(message, result === "PASS" ? "pass" : "fail");
 
 //.6 Append to the list using createElement() and appendChild()//
@@ -58,7 +58,7 @@ if (emptyMessage) {
 const li = document.createElement("li");
 
 //fill it with the student's info
-li.innerHTML = `<span>${studentName} - <strong>${studentMark}/100</strong></span>
+li.innerHTML = `<span>${studentName} - <strong>${studentMark}  -  100</strong></span>
                 <span class="${result === 'PASS' ? 'badge-pass' : 'badge-fail'}">${result}  ${grade}</span>`;
 
 //Add the new <li> to the <ul>
