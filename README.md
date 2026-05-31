@@ -2,7 +2,7 @@
 
 ---
 
-#Features
+Features
 - Enter a student name and mark (0 - 100)
 - Instant pass/fail result with grade
 - Input validation (rejects empty names and out of range marks)
@@ -10,7 +10,7 @@
 
 ---
 
-#Study resources 
+Study resources 
 - https://www.geeksforgeeks.org/
 - https://devdocs.io/javascript/
 - https://www.youtube.com/watch?v=jS4aFq5-91M&list=PPSV
